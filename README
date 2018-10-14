@@ -1,0 +1,15 @@
+1-Scarica Docker
+2-Scarick Laradock
+3-Configura .env Laradock MYSQL MONGO_STORAGE_SERVER_COLLECTION
+
+
+
+
+CREATE USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'tuapassword';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+CREATE USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY 'tuapassword';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+#
+CREATE DATABASE IF NOT EXISTS `isjeadydocker` COLLATE 'utf8_general_ci' ;
+GRANT ALL ON `isjeadydocker`.* TO 'admin'@'%' ;
+FLUSH PRIVILEGES ;
